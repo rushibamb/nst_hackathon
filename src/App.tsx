@@ -1,17 +1,10 @@
 import React, { useState, useRef, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { 
   OrbitControls, 
   Stars, 
-  Text, 
-  Sphere, 
-  Box,
-  useTexture,
-  Trail,
-  Point,
-  PointMaterial,
-  Line
+  Text
 } from '@react-three/drei';
 import { 
   Rocket, 
