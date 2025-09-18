@@ -1,9 +1,10 @@
 import axios from 'axios';
+import CONFIG_API_BASE_URL from '../config';
 
 // Prefer explicit env; otherwise if running locally default to localhost backend; else use hosted fallback
 const envUrl = process.env.REACT_APP_API_URL;
 const isLocal = typeof window !== 'undefined' && window.location.hostname === 'localhost';
-const API_BASE_URL = envUrl || (isLocal ? 'http://localhost:8000' : 'https://newton-backend.onrender.com');
+const API_BASE_URL = envUrl || CONFIG_API_BASE_URL || (isLocal ? 'http://localhost:8000' : '');
 
 const api = axios.create({
   baseURL: API_BASE_URL,
