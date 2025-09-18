@@ -20,6 +20,7 @@
     }
   ],
   "env": {
-    "REACT_APP_API_URL": "https://atlas-mission-planner-backend.onrender.com"
+    "REACT_APP_API_URL": "https://atlas-mission-planner-backend.onrender.com",
+    "CI": "false"
   }
 }
